@@ -1,5 +1,11 @@
-let animales = ['oso', 'gato', 'chancho'];
+let chanchitos = ['Alvaro', 'Isma', 'Bautista'];
+for (let bautista of chanchitos) {
+    console.log(bautista)
+}
 
-for (let animal of animales) {
-    console.log(animal);
+
+let i = 0;
+while (i < chanchitos.length) {
+    console.log(chanchitos[i]);
+    i++;
 }
