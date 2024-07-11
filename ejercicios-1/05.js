@@ -1,10 +1,16 @@
-let array = [1, 23, 44, 4848, 34, 34, -23, -3221, -212];
+function comprobandoextremos(deunalista) {
+    mayor = deunalista[0];
+    menor = deunalista[0];
+    for (numero of deunalista) {
+        mayor = mayor > numero ? mayor : numero;
+        menor = menor < numero ? menor : numero;
 
-function getMenorMayor(arr) {
-    let menor = arr[0];
-    let mayor = arr[0];
-
-    for (numero of arr)
-
+    }
+    return [mayor, menor];
 
 }
+
+
+let olistaoarecare = [1, 2, 3, 44, 56, -98];
+let lamismacomparacion = comprobandoextremos(olistaoarecare);
+console.log(lamismacomparacion);
